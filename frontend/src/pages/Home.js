@@ -1,7 +1,9 @@
+import Users from "./Users";
+
 function Home() {
   return (
     <div>
-      <header>Home Page</header>
+      <Users />
     </div>
   );
 }
