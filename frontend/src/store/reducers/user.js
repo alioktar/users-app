@@ -2,7 +2,7 @@ import { createReducer } from "@reduxjs/toolkit";
 
 import UserActions from "../actions/user";
 
-const initialState = { users: [], loading: false };
+const initialState = { users: [], selectedRows: [], loading: false };
 
 const UserReducer = createReducer(initialState, (builder) =>
   builder
@@ -11,6 +11,9 @@ const UserReducer = createReducer(initialState, (builder) =>
     })
     .addCase(UserActions.setLoading, (state, action) => {
       state.loading = action.payload;
+    })
+    .addCase(UserActions.setSelectedRows, (state, action) => {
+      state.selectedRows = action.payload;
     })
 );
 export default UserReducer;

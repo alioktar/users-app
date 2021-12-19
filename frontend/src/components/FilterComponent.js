@@ -1,14 +1,17 @@
 import React from "react";
+import Button from "./Button";
+import Input from "./Input";
 
 function FilterComponent({ filterText, onChange, handleClear }) {
   return (
     <div>
-      <input
+      <Input
         value={filterText}
-        placeholder="search any key"
         onChange={onChange}
+        className="rounded-r-none"
+        placeholder="search any key"
       />
-      <button onClick={handleClear}>X</button>
+      <Button label="Clear" onClick={handleClear} className="rounded-l-none" />
     </div>
   );
 }
