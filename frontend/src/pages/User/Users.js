@@ -6,7 +6,7 @@ import SaveModal from "./components/SaveModal";
 
 function Users() {
   return (
-    <section>
+    <section className="container flex-1">
       <DetailsModal />
       <SaveModal />
       <Table />

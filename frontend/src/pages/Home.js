@@ -1,15 +1,9 @@
-import Users from "./User/Users";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { Navigate } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="flex flex-col h-full items-center">
-      <Header title={"Users App"} />
-      <div className="container flex-1">
-        <Users />
-      </div>
-      <Footer />
+    <div className="container flex-1">
+      <Navigate to="/users" />
     </div>
   );
 }
