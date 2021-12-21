@@ -1,8 +1,17 @@
 import React from "react";
 
-function Input({ text, onChange, placeholder, className }) {
+function Input({
+  text,
+  name,
+  onChange,
+  className,
+  placeholder,
+  type = "text",
+}) {
   return (
     <input
+      type={type}
+      name={name}
       value={text}
       onChange={onChange}
       placeholder={placeholder}
