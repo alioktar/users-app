@@ -2,9 +2,9 @@ import React from "react";
 import Button from "./Button";
 import Input from "./Input";
 
-function FilterComponent({ filterText, onChange, handleClear }) {
+function FilterComponent({ onChange, filterText, handleClear }) {
   return (
-    <div>
+    <div className="flex">
       <Input
         value={filterText}
         onChange={onChange}

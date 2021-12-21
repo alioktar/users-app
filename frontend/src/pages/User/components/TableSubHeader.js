@@ -18,15 +18,15 @@ function TableSubHeader({ filterText, handleClear, setFilterText }) {
   };
 
   return (
-    <>
+    <div className="w-full flex justify-end flex-col sm:flex-row">
       <Button
         label="New User"
-        className="bg-emerald-500 border-emerald-500 active:bg-emerald-600 mr-2"
+        className="bg-emerald-500 border-emerald-500 active:bg-emerald-600 mb-2 sm:mb-0 sm:mr-2"
         onClick={handleNewUserClick}
       />
       <Button
         label="Delete User / Users"
-        className="bg-red-500 mr-2 border-red-500"
+        className="bg-red-500 mb-2 sm:mb-0 sm:mr-2 border-red-500"
         onClick={handleDeleteClick}
       />
       <FilterComponent
@@ -34,7 +34,7 @@ function TableSubHeader({ filterText, handleClear, setFilterText }) {
         handleClear={handleClear}
         onChange={(e) => setFilterText(e.target.value)}
       />
-    </>
+    </div>
   );
 }
 
