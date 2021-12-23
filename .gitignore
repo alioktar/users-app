@@ -21,3 +21,37 @@
 /frontend/npm-debug.log*
 /frontend/yarn-debug.log*
 /frontend/yarn-error.log*
+
+/backend/users/HELP.md
+/backend/users/target/
+/backend/users/!.mvn/wrapper/maven-wrapper.jar
+/backend/users/!**/src/main/**/target/
+/backend/users/!**/src/test/**/target/
+
+### STS ###
+/backend/users/.apt_generated
+/backend/users/.classpath
+/backend/users/.factorypath
+/backend/users/.project
+/backend/users/.settings
+/backend/users/.springBeans
+/backend/users/.sts4-cache
+
+### IntelliJ IDEA ###
+/backend/users/.idea
+/backend/users/*.iws
+/backend/users/*.iml
+/backend/users/*.ipr
+
+### NetBeans ###
+/backend/users/nbproject/private/
+/backend/users/nbbuild/
+/backend/users/dist/
+/backend/users/nbdist/
+/backend/users/.nb-gradle/
+/backend/users/build/
+/backend/users/!**/src/main/**/build/
+/backend/users/!**/src/test/**/build/
+
+### VS Code ###
+/backend/users/.vscode/
